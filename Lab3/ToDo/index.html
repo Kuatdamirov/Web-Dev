@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Todo List</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .todo-container {
+        max-width: 500px;
+        margin: 0;
+        text-align: center;
+    }
+    .todo-item {
+        margin-bottom: 10px;
+    }
+    .done {
+        text-decoration: line-through;
+    }
+    .add-button {
+        background-color: dodgerblue;
+        color: white;
+    }
+    .delete-button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        margin-left: 250px;
+    }
+    .delete-button:before {
+        content: "\1F5D1";
+        color: rgb(252, 5, 5);
+    }
+    .tododo{
+        background-color: black;
+        color: slategray;
+        height: 30px; 
+        display: flex;
+        align-items: center;
+        justify-content: baseline;
+    }
+    .tododo h2{
+        margin: 0;
+        font-size: 10px;
+    }
+    .todo-container input[type="text"]{
+        width: 400px; 
+    }
+</style>
+</head>
+<body>
+    <div class="tododo">
+        <h2>Todo List</h2>
+    </div>
+<div class="todo-container">
+    <h2>Todo List</h2>
+    <input type="text" id="new-item"  placeholder="New task">
+    <button class="add-button" onclick="addItem()">Add</button>
+    <ul id="todo-list"></ul>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.todo-container {
+    max-width: 500px;
+    margin: 0;
+    text-align: center;
+}
+.todo-item {
+    margin-bottom: 10px;
+}
+.done {
+    text-decoration: line-through;
+}
+.add-button {
+    background-color: dodgerblue;
+    color: white;
+}
+.delete-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 250px;
+}
+.delete-button:before {
+    content: "\1F5D1";
+    color: rgb(252, 5, 5);
+}
+.tododo{
+    background-color: black;
+    color: slategray;
+    height: 30px; 
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+}
+.tododo h2{
+    margin: 0;
+    font-size: 10px;
+}
+.todo-container input[type="text"]{
+    width: 400px; 
+}
